@@ -1,0 +1,10 @@
+Docker Image in:
+
+docker pull marceloluizfranca/api-produto
+
+Kubernetes:
+
+kubectl apply -f ../k8s/mongodb/deployment.yaml
+kubectl apply -f ../k8s/mongodb/service.yaml
+kubectl apply -f ../k8s/api/deployment.yaml
+kubectl apply -f ../k8s/api/service.yaml
