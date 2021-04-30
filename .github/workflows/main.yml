@@ -29,9 +29,9 @@ jobs:
         uses: docker/login-action@v1.9.0
         with:
           # Username used to log against the Docker registry
-          username: ${{github.DOCKER_USER}}
+          username: ${{secrets.DOCKER_USER}}
           # Password or personal access token used to log against the Docker registry
-          password: ${{github.DOCKER_PASS}}
+          password: ${{secrets.DOCKER_PASS}}
           
       - name: Build and push Docker images
         # You may pin to the exact commit or the version.
